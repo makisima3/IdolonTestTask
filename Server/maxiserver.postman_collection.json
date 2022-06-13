@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d6e81c6c-f9fe-421a-b9ee-ab9057a17664",
+		"name": "maxiserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3865493"
+	},
+	"item": [
+		{
+			"name": "reset",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"events\": [ \r\n        {\r\n            \"type\": \"t1\",\r\n            \"data\": \"some valuable data\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/reset",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"events\": [ \r\n        {\r\n            \"type\": \"t1\",\r\n            \"data\": \"some valuable data\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/get-all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"events\": [\r\n        {\r\n            \"type\": \"t2\",\r\n            \"data\": \"data 1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/send-event",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"send-event"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
